@@ -7,20 +7,20 @@
 
 
 /**
- * Função responsável por verificar se há elemntos que não sejma números inteiros no array
+ * Função responsável por verificar se há elementos que não sejam números inteiros no array
  */
 function soInteiros(array $valores): bool
 {
     foreach($valores as $valor){
         if(!is_int($valor)){
-            return false; # retorna false se encontrar um elemnto que não seja um número inteiro
+            return false; # retorna false se encontrar um elemento que não seja um número inteiro
         }
     }
 
     return true;
 }
 
-// Função para encontrar o amior valor do array
+// Função para encontrar o maior valor do array
 function findMax(array $valores)
 {
     if(!soInteiros($valores)){
